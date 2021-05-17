@@ -1,0 +1,2 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[678],{7704:function(e,n,t){"use strict";t.r(n),t.d(n,{default:function(){return l}});var u=t(7294);function l(){return u.createElement(u.Fragment,null,u.createElement("scoped-div",null),u.createElement("shadow-div",null))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-d17d146e33a83718810c.js.map
