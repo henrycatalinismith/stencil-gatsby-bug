@@ -6,12 +6,20 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface DefaultDiv {
+    }
     interface ScopedDiv {
     }
     interface ShadowDiv {
     }
 }
 declare global {
+    interface HTMLDefaultDivElement extends Components.DefaultDiv, HTMLStencilElement {
+    }
+    var HTMLDefaultDivElement: {
+        prototype: HTMLDefaultDivElement;
+        new (): HTMLDefaultDivElement;
+    };
     interface HTMLScopedDivElement extends Components.ScopedDiv, HTMLStencilElement {
     }
     var HTMLScopedDivElement: {
@@ -25,16 +33,20 @@ declare global {
         new (): HTMLShadowDivElement;
     };
     interface HTMLElementTagNameMap {
+        "default-div": HTMLDefaultDivElement;
         "scoped-div": HTMLScopedDivElement;
         "shadow-div": HTMLShadowDivElement;
     }
 }
 declare namespace LocalJSX {
+    interface DefaultDiv {
+    }
     interface ScopedDiv {
     }
     interface ShadowDiv {
     }
     interface IntrinsicElements {
+        "default-div": DefaultDiv;
         "scoped-div": ScopedDiv;
         "shadow-div": ShadowDiv;
     }
@@ -43,6 +55,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "default-div": LocalJSX.DefaultDiv & JSXBase.HTMLAttributes<HTMLDefaultDivElement>;
             "scoped-div": LocalJSX.ScopedDiv & JSXBase.HTMLAttributes<HTMLScopedDivElement>;
             "shadow-div": LocalJSX.ShadowDiv & JSXBase.HTMLAttributes<HTMLShadowDivElement>;
         }
