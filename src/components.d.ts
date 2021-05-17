@@ -6,32 +6,45 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface ExampleDiv {
+    interface ScopedDiv {
+    }
+    interface ShadowDiv {
     }
 }
 declare global {
-    interface HTMLExampleDivElement extends Components.ExampleDiv, HTMLStencilElement {
+    interface HTMLScopedDivElement extends Components.ScopedDiv, HTMLStencilElement {
     }
-    var HTMLExampleDivElement: {
-        prototype: HTMLExampleDivElement;
-        new (): HTMLExampleDivElement;
+    var HTMLScopedDivElement: {
+        prototype: HTMLScopedDivElement;
+        new (): HTMLScopedDivElement;
+    };
+    interface HTMLShadowDivElement extends Components.ShadowDiv, HTMLStencilElement {
+    }
+    var HTMLShadowDivElement: {
+        prototype: HTMLShadowDivElement;
+        new (): HTMLShadowDivElement;
     };
     interface HTMLElementTagNameMap {
-        "example-div": HTMLExampleDivElement;
+        "scoped-div": HTMLScopedDivElement;
+        "shadow-div": HTMLShadowDivElement;
     }
 }
 declare namespace LocalJSX {
-    interface ExampleDiv {
+    interface ScopedDiv {
+    }
+    interface ShadowDiv {
     }
     interface IntrinsicElements {
-        "example-div": ExampleDiv;
+        "scoped-div": ScopedDiv;
+        "shadow-div": ShadowDiv;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "example-div": LocalJSX.ExampleDiv & JSXBase.HTMLAttributes<HTMLExampleDivElement>;
+            "scoped-div": LocalJSX.ScopedDiv & JSXBase.HTMLAttributes<HTMLScopedDivElement>;
+            "shadow-div": LocalJSX.ShadowDiv & JSXBase.HTMLAttributes<HTMLShadowDivElement>;
         }
     }
 }

@@ -1,14 +1,14 @@
 import { Component, h, Host } from "@stencil/core"
 
 @Component({
-  tag: 'example-div',
+  tag: 'scoped-div',
   scoped: true,
   shadow: false,
 })
-export class ExampleDiv {
+export class ScopedDiv {
   render() {
     return (
-      <Host><div>example div</div></Host>
+      <Host><div>scoped div</div></Host>
     )
   }
 }
