@@ -1,4 +1,4 @@
-import { Component, Event, EventEmitter, Host, Method, Prop, Watch } from '@stencil/core'
+import { Component, h, Host } from "@stencil/core"
 
 @Component({
   tag: 'example-div',
