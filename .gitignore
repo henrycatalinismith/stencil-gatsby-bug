@@ -1,2 +1,6 @@
+/dist/
+/hydrate/
+/loader/
+/www/
 /node_modules/
 /yarn-error.log

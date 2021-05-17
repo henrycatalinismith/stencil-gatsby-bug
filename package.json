@@ -5,5 +5,8 @@
     "@stencil/core": "^2.5.2",
     "@stencil/sass": "^1.4.1",
     "babel-loader": "^8.2.2"
+  },
+  "scripts": {
+    "build": "stencil build"
   }
 }
