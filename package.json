@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-typescript": "^7.13.0",
+    "@stencil/core": "^2.5.2",
+    "@stencil/sass": "^1.4.1",
+    "babel-loader": "^8.2.2"
+  }
+}
