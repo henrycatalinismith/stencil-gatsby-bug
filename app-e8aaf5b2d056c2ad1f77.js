@@ -1799,8 +1799,8 @@ var inheritsLoose = __webpack_require__(1788);
 var api_runner_browser = __webpack_require__(7343);
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(3935);
+// EXTERNAL MODULE: ./node_modules/react-dom/profiling.js
+var profiling = __webpack_require__(2518);
 // EXTERNAL MODULE: ./node_modules/@gatsbyjs/reach-router/es/index.js + 2 modules
 var es = __webpack_require__(9499);
 // EXTERNAL MODULE: ./node_modules/gatsby-react-router-scroll/index.js
@@ -1910,7 +1910,7 @@ var RouteHandler=function RouteHandler(props){return/*#__PURE__*/react.createEle
 // - it's the offline plugin shell (/offline-plugin-app-shell-fallback/)
 if(pagePath&&"/stencil-gatsby-bug"+pagePath!==browserLoc.pathname&&!(production_app_loader.findMatchPath((0,strip_prefix/* default */.Z)(browserLoc.pathname,"/stencil-gatsby-bug"))||pagePath==="/404.html"||pagePath.match(/^\/404\/?$/)||pagePath.match(/^\/offline-plugin-app-shell-fallback\/?$/))){(0,es.navigate)("/stencil-gatsby-bug"+pagePath+browserLoc.search+browserLoc.hash,{replace:true});}loader/* publicLoader.loadPage */.jN.loadPage(browserLoc.pathname).then(function(page){if(!page||page.status===loader/* PageResourceStatus.Error */.uQ.Error){var message="page resources for "+browserLoc.pathname+" not found. Not rendering React";// if the chunk throws an error we want to capture the real error
 // This should help with https://github.com/gatsbyjs/gatsby/issues/19618
-if(page&&page.error){console.error(message);throw page.error;}throw new Error(message);}window.___webpackCompilationHash=page.page.webpackCompilationHash;var SiteRoot=(0,api_runner_browser/* apiRunner */.h)("wrapRootElement",{element:/*#__PURE__*/react.createElement(LocationHandler,null)},/*#__PURE__*/react.createElement(LocationHandler,null),function(_ref4){var result=_ref4.result;return{element:result};}).pop();var App=function App(){return/*#__PURE__*/react.createElement(GatsbyRoot,null,SiteRoot);};var renderer=(0,api_runner_browser/* apiRunner */.h)("replaceHydrateFunction",undefined,react_dom.hydrate)[0];ready_default()(function(){renderer(/*#__PURE__*/react.createElement(App,null),typeof window!=="undefined"?document.getElementById("___gatsby"):void 0,function(){(0,api_runner_browser/* apiRunner */.h)("onInitialClientRender");});});});});
+if(page&&page.error){console.error(message);throw page.error;}throw new Error(message);}window.___webpackCompilationHash=page.page.webpackCompilationHash;var SiteRoot=(0,api_runner_browser/* apiRunner */.h)("wrapRootElement",{element:/*#__PURE__*/react.createElement(LocationHandler,null)},/*#__PURE__*/react.createElement(LocationHandler,null),function(_ref4){var result=_ref4.result;return{element:result};}).pop();var App=function App(){return/*#__PURE__*/react.createElement(GatsbyRoot,null,SiteRoot);};var renderer=(0,api_runner_browser/* apiRunner */.h)("replaceHydrateFunction",undefined,profiling.hydrate)[0];ready_default()(function(){renderer(/*#__PURE__*/react.createElement(App,null),typeof window!=="undefined"?document.getElementById("___gatsby"):void 0,function(){(0,api_runner_browser/* apiRunner */.h)("onInitialClientRender");});});});});
 
 /***/ }),
 
@@ -8242,4 +8242,4 @@ try {
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=app-16a7861f7993ce05f6a8.js.map
+//# sourceMappingURL=app-e8aaf5b2d056c2ad1f77.js.map
